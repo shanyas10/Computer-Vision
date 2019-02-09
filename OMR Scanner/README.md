@@ -1,2 +1,2 @@
 
-Implementation og OMR Scanner and grading system.
+Implementation of OMR Scanner and grading system.
