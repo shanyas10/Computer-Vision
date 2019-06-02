@@ -1,5 +1,9 @@
 # AlexNet
 
+## Paper
+
+ [ImageNet Classification with Deep Convolutional Neural Networks]( https://www.google.co.nz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjvzL_N8MTVAhUFpZQKHcpODPsQFggoMAA&url=https%3A%2F%2Fpapers.nips.cc%2Fpaper%2F4824-imagenet-classification-with-deep-convolutional-neural-networks&usg=AFQjCNGDNgq60s_SjQnOE1S-bk3xAGeLjg )
+
 
 ## Introduction
 
