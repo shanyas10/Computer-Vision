@@ -13,6 +13,8 @@ Alex Krizhevsky, Geoffrey Hinton and Ilya Sutskever created a neural network arc
 
 It contains **5 convolutional layers** and **3 fully connected layers**. Relu is applied after very convolutional and fully connected layer. **Dropout** is applied before the first and the second fully connected year. **The image size in the following architecutre chart should be 227 * 227 (instead of 224 * 224, pointed out by Andrei Karpathy in his famous CS231n Course)**
 
+[image](https://engmrk.com/wp-content/uploads/2018/10/AlexNet_Original_Image.jpg)
+
 ### Convolutional Layers
 #### Layer 1:
 The input for AlexNet is a **227x227x3 RGB image** which passes through the first convolutional layer with **96 feature maps** or filters having **size 11×11** and a **stride of 4**. 
@@ -28,3 +30,15 @@ The three convolutional layers are followed by a **maximum pooling layer** with 
 ### Fully Connected Layers
 #### Layer 6, 7, 8:
 Fully connected layers with **4096 units**
+
+## Highlights:
+
+* They used **Relu instead of Tanh to add non-linearity**. It accelerated the speed by 6 times at the same accuracy.
+* To prevent overfitting, they used **Dropout with a rate of 0.5**. However, it almost doubled the training time.
+* To reduce the size of network, **Overlap pooling** was used. It reduced the top-1 and top-5 error rates by 0.4% and 0.3%, repectively.
+* **Local Response Normalization** was used to aid generalization. It reduced the top-1 and top-5 error rates by 1.4% and 1.2%,
+respectively. (However, I have implemented the network using Batch Normalization)
+* They spread the network across **two GPUs**. (I am, however, implementing a sequential network). This scheme reduces the top-1
+and top-5 error rates by 1.7% and 1.2%, respectively, as compared with a net with half as many kernels in each convolutional layer trained on one GPU. The two-GPU net takes slightly less time to train than the one-GPU net2.
+* For data augmentation, they perform **PCA on the set of RGB pixel values** throughout the ImageNet training set
+
