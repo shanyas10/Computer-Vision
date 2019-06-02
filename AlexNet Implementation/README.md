@@ -13,7 +13,7 @@ Alex Krizhevsky, Geoffrey Hinton and Ilya Sutskever created a neural network arc
 
 It contains **5 convolutional layers** and **3 fully connected layers**. Relu is applied after very convolutional and fully connected layer. **Dropout** is applied before the first and the second fully connected year. **The image size in the following architecutre chart should be 227 * 227 (instead of 224 * 224, pointed out by Andrei Karpathy in his famous CS231n Course)**
 
-[!image.png](https://engmrk.com/wp-content/uploads/2018/10/AlexNet_Original_Image.jpg)
+![AlexNet Architecture](https://engmrk.com/wp-content/uploads/2018/10/AlexNet_Original_Image.jpg)
 
 ### Convolutional Layers
 #### Layer 1:
