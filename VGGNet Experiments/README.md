@@ -50,7 +50,3 @@ VGGNet is invented by VGG (Visual Geometry Group) from University of Oxford, Tho
 		* Fix S, known as single scale training. Here S = 256 and S = 384
 		* Vary S, known as multi-scale training
 	* S from range [Smin, Smax] where Smin = 256, Smax = 512
-Yet to cover
-* Single Sacle Evaluation
-* Multi scale evaluation
-	
